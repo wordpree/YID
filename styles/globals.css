@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Quicksand:wght@500;700&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", "Quicksand", sans-serif;
 }
 
 a {
@@ -13,14 +14,171 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    /* color-scheme: dark; */
   }
   body {
     color: white;
-    background: black;
+    /* background: black; */
+  }
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  border: 2px solid #edf2f7;
+  color: #4a5568;
+  border-radius: 8px;
+  resize: vertical;
+  background-color: #f7fafc;
+  box-sizing: border-box;
+  padding: 0.65rem 0.5rem;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="number"] {
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  /* border: 2px solid #edf2f7; */
+  border: none;
+  background-color: #f7fafc;
+  color: #2d3748;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 40px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  margin-top: 2rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #4a5568;
+  border: 2px solid #4a5568;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  line-height: initial;
+  transition: background-color 200ms ease-in-out, border 200ms ease-in-out,
+    transform 200ms ease-in-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  font-size: 0.85rem;
+  color: #6c717f;
+}
+.error {
+  font-size: 12px;
+  color: #e53e3e;
+  margin-top: 0.25rem;
+  text-align: left;
+}
+.input-wrapper {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+.input-field {
+  background-color: #f7fafc;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.text-input {
+  width: 100%;
+}
+.img-wrapper {
+  position: absolute;
+  pointer-events: none;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+}
+.name-img {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.feature-section {
+  padding: 1rem 0.5rem;
+  text-align: center;
+  background-color: #000;
+}
+
+.feature-section h3 {
+  margin-bottom: 34px;
+}
+.feature-section p {
+  padding: 2rem 1rem;
+}
+
+.contact-entry {
+  background-color: #000;
+  text-align: center;
+}
+.contact-entry p {
+  padding-top: 8px;
+}
+
+.hr {
+  width: 100%;
+  color: #333;
+  margin: 1.5rem auto;
+}
+
+.ta-wrapper {
+}
+
+.form-field {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  max-width: 398px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1025px) {
+  .hr {
+    display: none;
+  }
+  .form-field {
+    flex-direction: row;
+    max-width: initial;
+  }
+  .input-entry {
+    margin-right: 2rem;
+    flex: 0 1 328px;
+  }
+  .input-wrapper:last-child {
+    margin-bottom: 0;
+  }
+  .ta-wrapper {
+    flex: 0 1 298px;
   }
 }

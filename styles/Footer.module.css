@@ -1,0 +1,26 @@
+.entry {
+  background-color: #000;
+  padding: 1rem 2rem;
+}
+.iconEntry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.iconWrapper span {
+  font-size: 10px;
+  color: #dedede;
+  opacity: 0.75;
+}
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.copyright {
+  color: rgba(229, 229, 229, 0.38);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
